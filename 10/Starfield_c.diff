@@ -1,0 +1,59 @@
+25c25
+< #define _TIMED_ 0
+---
+> #define _TIMED_ 1
+38c38,40
+< 
+---
+>   lives=3;
+> 	 mvaddstr(height-3, width/2-13, "enter difficulty(1-9): "); 
+>    difficulty=getch()-'0'; 
+44c46,47
+<     if (rand() % 5 == 0) 
+---
+>      if (rand() % difficulty == 0)
+> 	//if (rand() % 5 == 0) 
+81a85,86
+>   rtime=120;
+>   stime=time(NULL);
+96c101
+<   /*
+---
+>   
+108c113
+<     addch('x');
+---
+>     addch('.');
+111c116
+<        */
+---
+>        
+170c175,176
+<   mvaddstr(height/2+5, 0, text);  
+---
+>   mvaddstr(height/2+5, 0, text);
+>   
+172a179
+>   
+210c217
+< void Starfield::TestCollision() const
+---
+> void Starfield::TestCollision() //const
+211a219
+> 	if(asteroids[C.GetY()*width+C.GetX()] == '*'&&!--lives)	GameOver();
+243,244c251,252
+<   printw("lives: %i ", 3);
+<   printw("time: %i ", 120);
+---
+>   printw("lives: %i ", lives);
+>   printw("time: %i ", rtime);
+285a294
+>       CheckTime();
+288a298
+>      
+293a304,308
+> }
+> void Starfield::CheckTime()
+> {
+>  rtime=120-(time(NULL)-stime);
+>      if(rtime<0)GameOver();

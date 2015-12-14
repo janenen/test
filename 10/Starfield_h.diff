@@ -1,0 +1,18 @@
+34a35
+> //#include <ctime>
+72c73,77
+< 
+---
+> 	unsigned int lives;
+> 	unsigned int  difficulty;
+> 	int rtime;
+> 	int stime;
+> 	
+93c98
+<   void TestCollision() const;
+---
+>   void TestCollision() ;//const;
+101c106
+< 
+---
+> 	void CheckTime();
