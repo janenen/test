@@ -1,0 +1,14 @@
+#include "Matrix.h"
+
+Matrix::Matrix(int,int)
+{
+}
+Matrix::Matrix Matrix::add(Matrix)
+{
+}
+Matrix::Matrix Matrix::mmult(Matrix)
+{
+}
+Matrix::Matrix Matrix::smult(double)
+{
+}

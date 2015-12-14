@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	char c='a';
+	short s=1;
+	long l=1;
+	long long ll=1;
+	float f=1.0;
+	double d=1.0;
+	cout<<"char: "<<sizeof(c)<<" Byte"<<endl;
+	cout<<"short: "<<sizeof(s)<<" Byte"<<endl;
+	cout<<"long: "<<sizeof(l)<<" Byte"<<endl;
+	cout<<"long long: "<<sizeof(ll)<<" Byte"<<endl;
+	cout<<"float: "<<sizeof(f)<<" Byte"<<endl;
+	cout<<"double: "<<sizeof(d)<<" Byte"<<endl;
+	
+	return 0;
+}

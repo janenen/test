@@ -1,0 +1,13 @@
+#ifndef __ELEMENT_H__
+#define __ELEMENT_H__
+class Element{
+	private:
+	int i;
+	Element *next;
+	public:
+	Element();
+	Element(Element&);
+	Element	getNext(void);
+	int getValue();
+};
+#endif

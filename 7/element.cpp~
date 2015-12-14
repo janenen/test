@@ -1,0 +1,10 @@
+#include "element.h"
+
+Element Element::getNext()
+{
+	return (*this).next;
+}
+int Element::getValue()
+{
+	return this->i;
+}

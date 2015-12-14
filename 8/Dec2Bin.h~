@@ -1,0 +1,8 @@
+#ifndef __DEC2BIN_H__
+#define __DEC2BIN_H__
+class Dec2Bin{
+	private:
+	public:
+	
+};
+#endif
